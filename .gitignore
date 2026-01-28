@@ -1,0 +1,35 @@
+# Virtual environments
+venv/
+myEnv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment variables and secrets
+.env
+.env.local
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files that are too large for git (regenerate or download locally)
+*.parquet
+*.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
