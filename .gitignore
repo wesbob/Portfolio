@@ -30,6 +30,7 @@ Thumbs.db
 # Data files that are too large for git (regenerate or download locally)
 *.parquet
 *.db
+*.csv
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
