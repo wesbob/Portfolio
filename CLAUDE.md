@@ -46,11 +46,23 @@ Same deal - each phase is a commit. Small bites.
 
 ## Technical Stack
 
-- **Python 3.x** - Data acquisition, cleaning, analysis
-- **PostgreSQL** - Data storage and SQL analysis (Vikings project primarily)
+- **Python 3.12** - Data acquisition, cleaning, analysis (3.14 is too new, causes pip build failures)
+- **PostgreSQL 18** - Data storage and SQL analysis (Vikings project primarily)
 - **Power BI / matplotlib / plotly** - Visualization (choose per project)
 - **Git/GitHub** - Version control with clean, meaningful commits
 - **VS Code** - Primary IDE
+
+## Current State
+
+**Vikings Analytics (Phase 2 complete):**
+- Database: `vikings_analytics` (PostgreSQL, local)
+- Table: `plays` - 3 seasons of Vikings play-by-play data (2023-2025)
+- Views: `fourth_down_plays`, `red_zone_plays`, `vikings_offense`
+- Next: Phase 3 (Analysis) - dig into 4th down decisions, red zone efficiency, or receiver performance
+- Scripts: `pull_data.py` (fetches from nflverse), `load_to_db.py` (loads to PostgreSQL), `create_views.sql`
+
+**Nicotine in Foods (Not started):**
+- Phase 1 is research and data collection
 
 ## Git Guidance
 
