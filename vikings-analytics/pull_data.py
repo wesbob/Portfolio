@@ -3,8 +3,8 @@ import pandas as pd
 
 # Pull play-by-play data for recent seasons
 # This takes a minute - it's downloading a lot of data
-print("Pulling play-by-play data for 2022-2024...")
-pbp = nfl.import_pbp_data([2022, 2023, 2024])
+print("Pulling play-by-play data for 2023-2025...")
+pbp = nfl.import_pbp_data([2023, 2024, 2025])
 
 print(f"Total plays: {len(pbp):,}")
 print(f"Columns: {len(pbp.columns)}")
@@ -26,5 +26,5 @@ print("\n--- Sample row ---")
 print(fourthDowns[keyColumns].head(1).to_string())
 
 # Save to csv
-output_path = 'vikings_pbp_2022_2024.csv'
+output_path = 'vikings_pbp_2023_2025.csv'
 vikings.to_csv(output_path, index=False)
